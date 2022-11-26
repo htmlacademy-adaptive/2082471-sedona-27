@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html class="form" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Форма обратной связи: Седона</title>
+</head>
+
+<body class="form__body">
+  <header class="main-header">
+    <div class="main-header__wrapper">
+
+      <nav class="main-nav">
+        <a class="main-header__logo">
+          <img class="main-header__logo-image" src="img/logotype.svg" width="185" height="96"
+            alt="Логотип города Седона.">
+        </a>
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--active">
+            <a>
+              Главная
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">
+              Фото и видео
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">
+              Форма отзыва
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">
+              HTMLAcademy
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main-container">
+    <section class="advertisement">
+      <h1 class="visually-hidden">Форма обратной связи</h1>
+      <div class="advertisement__wrapper">
+        <img class="advertisement__image" src="img/sedona.svg" width="229" height="39"
+          alt="Панорамный вид на лесистые каньоны Седоны.">
+      </div>
+    </section>
+
+    <section class="user-form">
+      <div class="user-form__wrapper">
+        <header class="form-header">
+          <h2 class="form-header__title"><b>Оставьте свой отзыв</b></h2>
+          <p class="form-header__intro">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных
+            вами
+            достопримечательностях</p>
+        </header>
+
+        <form class="user-settings-form" action="https://echo.htmlacademy.ru/" method="post">
+          <fieldset class="user-settings-form__name form-field">
+            <legend class="form-field__legend">Представьтесь:</legend>
+            <p class="form-field__wrapper">
+              <label class="form-field__label" for="field-name1">Имя<sup>*</sup>:</label>
+              <input class="form-field__control form-control input" type="text" id="field-name1" name="field-name1"
+                placeholder="Пётр" required>
+            </p>
+
+            <p class="form-field__wrapper">
+              <label class="form-field__label" for="field-name2">Фамилия<sup>*</sup>:</label>
+              <input class="form-field__control form-control input" type="text" id="field-name2" name="field-name2"
+                placeholder="Пустота" required>
+            </p>
+
+            <p class="form-field__wrapper">
+              <label class="form-field__label" for="field-name3">Отчество:</label>
+              <input class="form-field__control form-control input" type="text" id="field-name3" name="field-name3"
+                placeholder="Викторович">
+            </p>
+          </fieldset>
+
+          <fieldset class="user-settings-form__name form-field">
+            <legend class="form-field__legend">Контактная информация:</legend>
+            <p class="form-field__wrapper">
+              <label class="form-field__label" for="field-tel">Контактный телефон<sup>*</sup>:</label>
+              <input class="form-field__control form-control input input--has-icon" type="text" id="field-tel"
+                name="field-tel" placeholder="Введите телефон" required>
+            </p>
+
+            <p class="form-field__wrapper">
+              <label class="form-field__label" for="field-email">Электронная почта<sup>*</sup>:</label>
+              <input class="form-field__control form-control input input--has-icon" type="text" id="field-email"
+                name="field-email" placeholder="Введите e-mail" required>
+            </p>
+          </fieldset>
+
+          <fieldset class="user-settings-form__name form-field">
+            <legend class="form-field__legend">Ваше общее впечатление:</legend>
+            <ul class="form-field__list">
+              <li class="form-field__item">
+                <label class="form-field__label">
+                  <input class="visually-hidden form-field__control form-control radio" type="radio" name="rating"
+                    checked>
+                  <span class="form-field__control-mark"></span>
+                  <span class="form-field__control-input">Скорее положительное</span>
+                </label>
+              </li>
+              <li class="form-field__item">
+                <label class="form-field__label">
+                  <input class="visually-hidden form-field__control form-control radio" type="radio" name="rating">
+                  <span class="form-field__control-mark"></span>
+                  <span class="form-field__control-input">Скорее отрицательное</span>
+                </label>
+              </li>
+              <li class="form-field__item">
+                <label class="form-field__label">
+                  <input class="visually-hidden form-field__control form-control radio" type="radio" name="rating">
+                  <span class="form-field__control-mark"></span>
+                  <span class="form-field__control-input">Затрудняюсь ответить</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="user-settings-form__name form-field">
+            <legend class="form-field__legend">Посещённые достопримечательности:</legend>
+            <ul class="form-field__list">
+              <li class="form-field__item">
+                <label class="form-field__label">
+                  <input class="visually-hidden form-field__control form-control checkbox" type="checkbox"
+                    name="attractions" checked>
+                  <span class="form-field__control-mark"></span>
+                  <span class="form-field__control-input">Мост Дьявола</span>
+                </label>
+              </li>
+              <li class="form-field__item">
+                <label class="form-field__label">
+                  <input class="visually-hidden form-field__control form-control checkbox" type="checkbox"
+                    name="attractions" checked>
+                  <span class="form-field__control-mark"></span>
+                  <span class="form-field__control-input">Гора-Колокол</span>
+                </label>
+              </li>
+              <li class="form-field__item">
+                <label class="form-field__label">
+                  <input class="visually-hidden form-field__control form-control checkbox" type="checkbox"
+                    name="attractions" checked>
+                  <span class="form-field__control-mark"></span>
+                  <span class="form-field__control-input">Слайд-парк</span>
+                </label>
+              </li>
+
+              <li class="form-field__item">
+                <label class="form-field__label">
+                  <input class="visually-hidden form-field__control form-control checkbox" type="checkbox"
+                    name="attractions">
+                  <span class="form-field__control-mark"></span>
+                  <span class="form-field__control-input">Красные скалы</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="user-settings-form__name form-field">
+            <legend class="form-field__legend">Опишите свои эмоции:</legend>
+            <label class="form-field__label">
+              <textarea class="form-field__control form-control textarea" rows="5"
+                placeholder="Опишите подробно все свои восторги"></textarea>
+            </label>
+          </fieldset>
+          <button class="user-settings-form__button button" type="submit">Отправить отзыв</button>
+          <p class="user-settings-form__required"><sup>*</sup> — обязательные поля</p>
+        </form>
+      </div>
+
+
+      <div class="user-form__error visually-hidden">
+        <h2 class="user-form__title"><b>Что-то пошло не так!</b></h2>
+        <p class="user-form__intro">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        <button class="user-form__button button button--error" type="button">Ок</button>
+      </div>
+
+      <div class="user-form__send visually-hidden">
+        <h2 class="user-form__title"><b>Что-то пошло не так!</b></h2>
+        <p class="user-form__intro">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        <button class="user-form__button button button--send" type="button">Ок</button>
+      </div>
+
+
+
+
+
+
+
+  </main>
+
+  <footer class="main-footer">
+    <div class="main-footer__wrapper">
+      <div class="main-footer__contacts contacts">
+        <a class="contacts__link" href="#"><b>#visitSEDONA</b></a>
+        <span class="visually-hidden">На главную</span>
+      </div>
+
+      <div class="main-footer__social social">
+        <span class="visually-hidden">Мы в социальных сетях</span>
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+          </li>
+
+          <li class="social__item">
+            <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Мы в Телеграме</a>
+          </li>
+
+
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в
+              Ютубе</a>
+          </li>
+
+        </ul>
+      </div>
+
+      <div class="main-footer__copyright copyright">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <b class="copyright__text copyright__text--logo">Разработано</b>
+          <span class="visually-hidden">Логотип HTML Academy</span>
+        </a>
+      </div>
+
+    </div>
+  </footer>
+
+
+</body>
+
+</html>
