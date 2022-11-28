@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
+
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
@@ -68,8 +69,7 @@
               <p class="advantages__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
             </a>
 
-            <img class="advantages__image" src="img/hotel.jpg" width="320" height="260"
-          alt="Мотель в стиле ранчо.">
+            <img class="advantages__image" src="img/hotel.jpg" width="320" height="260" alt="Мотель в стиле ранчо.">
 
             <ul class="services__list">
               <li class="services__item services__item--home">
@@ -100,7 +100,7 @@
               <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
             </a>
             <img class="advantages__image" src="img/devil's-bridge.jpg" width="320" height="260"
-          alt="Вид на мост Дьявола.">
+              alt="Вид на мост Дьявола.">
           </li>
 
           <li class="advantages__item advantages__item--simplex">
@@ -133,19 +133,21 @@
     <section class="hotel-search">
       <div class="hotel-search__wrapper">
         <h2 class="visually-hidden">Поиск гостиницы по предполагаемым датам поездки</h2>
-        <p class="hotel-search__question">Заинтересовались?</p>
+        <p class="hotel-search__title">Заинтересовались?</p>
         <p class="hotel-search__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения
           гостиниц в Седоне</p>
-        <a class="hotel-search__button button" href="#">Найти гостиницу</a>
+        <a class="hotel-search__link button" href="#">Найти гостиницу</a>
         <div class="hotel-search__map-wrapper hotel-search__map-wrapper--map-marker">
-          <a class="hotel-search__map">
+          <iframe src="img/map-mobile.jpg" width="320" height="350" frameborder="0">
+          </iframe>
+          <span class="visually-hidden">Интерактивная карта штата Аризона </span>
+          <!--  <a class="hotel-search__map">
             <img src="img/map-mobile.jpg" width="320" height="350" alt="Карта штата Аризона.">
-          </a>
+          </a>-->
           <span class="visually-hidden">Маркер нахождения гостиницы на карте штата</span>
         </div>
       </div>
     </section>
-
   </main>
 
   <footer class="main-footer">
@@ -154,25 +156,21 @@
         <a class="contacts__link" href="#"><b>#visitSEDONA</b></a>
         <span class="visually-hidden">На главную</span>
       </div>
-
       <div class="main-footer__social social">
         <span class="visually-hidden">Мы в социальных сетях</span>
         <ul class="social__list">
           <li class="social__item">
             <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
           </li>
-
           <li class="social__item">
             <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Мы в Телеграме</a>
           </li>
-
           <li class="social__item">
             <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в
               Ютубе</a>
           </li>
         </ul>
       </div>
-
       <div class="main-footer__copyright copyright">
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           <b class="copyright__text copyright__text--logo">Разработано</b>
@@ -181,7 +179,6 @@
       </div>
     </div>
   </footer>
-
 </body>
 
 </html>
